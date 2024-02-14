@@ -7,7 +7,7 @@ export default function Nav() {
     }, [])
 
     const [from, setFrom] = useState('');
-    const time = 950 * 7;
+    const time = 1050 * 7;
 
     useEffect(() => {
         setTimeout(() => {
@@ -26,7 +26,7 @@ export default function Nav() {
                 clearInterval(interval);
             }
             setNoun(word);
-        }, 900)
+        }, 1000)
     }
 
     return (
