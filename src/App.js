@@ -1,12 +1,14 @@
 import React from "react";
 import Nav from "./Components/Nav";
 import AboutMe from "./Components/AboutMe";
+import MenuBar from "./Components/Menu";
 
 function App() {
   return (
     <>
       <Nav />
-      <AboutMe />
+      <MenuBar />
+      <AboutMe id='About Me'/>
     </>
 
   )

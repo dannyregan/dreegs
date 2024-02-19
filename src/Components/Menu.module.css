@@ -1,0 +1,35 @@
+/* Menu Navigation Bars */
+
+.menuContainer {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 30px;
+    height: 50px;
+    z-index: 9999;
+  }
+  
+  .menuContainer a {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .menuBars {
+    width: 100%;
+    height: 0;
+    border: 1px solid white;
+    z-index: 1;
+    border-radius: 20%;
+  }
+  
+  .menuContainer a:hover {
+    width: 30px;
+  }
+  

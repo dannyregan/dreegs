@@ -1,20 +1,203 @@
+/* OVERALL IMAGE / BANNER CONTAINER */
+
+.bannerContainer {
+  width: 100vw;
+  max-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.bannerImg img {
+  width: 100vw;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* NAV SECTION WITH INITIALS AND LINKS */
+
 .nav {
     display: flex;
     justify-content: space-between;
-    margin: 15px 30px 0px 30px;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(35, 79, 111, 0.5);
   }
   
+  .navDivLeft {
+    margin-left: 3%;
+  }
+
+  .initials {
+    border: 3px solid white;
+    color: white;
+    border-radius: 4px;
+    padding: .75rem;
+    font-size: 2.5vw;
+    font-weight: 600;
+  }
+
+  .initials:hover {
+    background-color: rgba(35, 79, 111, 0.5);
+    cursor: pointer;
+  }
+
+  .navDivRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75vw;
+    margin-left: 10%;
+  }
+
   .navTabs {
     display: flex;
     justify-content: space-between;
+    font-size: 2.2vw;
+    align-items: center;
+    width: 100%;
+    padding-right: 5vw;
   }
   
   .navTabs a {
     text-decoration: none;
     list-style: none;
-    color: black;
+    color: white;
+    margin: 17px;
+    padding: 0px 0px 3px 2px;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
   }
-  
-  .navDivRight {
-    width: 50%;
+
+  .navTabs a:hover {
+    border: 2px solid white;
+    border-radius: 4px;
+    margin: 15px;
   }
+
+  .dots {
+    border: 2px solid white;
+    width: 2px;
+    height: 2px;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: white;
+  }
+
+/* DANNY REGAN FRONT END SECTION */
+.dannyRegan {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 4vw;
+  color: white;
+  background-color: rgba(35, 79, 111, 0.5);
+  border: 3px solid white;
+  border-radius: 4px;
+  width: 28vw;
+  padding: 1%;
+}
+
+.danny,
+.regan {
+  margin: 0px;
+  line-height: 80%;
+}
+
+.frontEnd {
+  font-size: 70%;
+  font-weight: 100;
+  line-height: 10%;
+}
+
+.frontEnd span {
+  font-weight: 300;
+}
+
+.valueContainer {
+  position: absolute;
+  right: 7%;
+  top: 40%;
+  width: 15vw;
+  color: white;
+  background-color: rgba(35, 79, 111, 0.5);
+  padding: 3vw;
+  border: 3px solid white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttonsContainer {
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+}
+
+
+.valueContainer p {
+  margin: 0px;
+  padding: .5vw;
+  font-size: 1vw;
+}
+
+button {
+  color: white;
+  background-color: rgba(250, 250, 250, .3);
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 100%;
+  font-size: .85vw;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.motto {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: white;
+  font-size: 1.5vw;
+}
+
+
+/* Menu Navigation Bars */
+
+.menuContainer {
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 30px;
+  border: 1px solid;
+}
+
+.menuContainer a {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menuBars {
+  width: 100%;
+  height: 0;
+  border: 1px solid red;
+  z-index: 1;
+}
+
+.menuContainer a:hover {
+  width: 30px;
+}
