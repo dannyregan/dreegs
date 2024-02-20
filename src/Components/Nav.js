@@ -46,7 +46,7 @@ export default function Nav() {
                                 <li>about me</li>
                                 <div className={styles.dots}></div>
                             </a>
-                            <a href="#Projects">
+                            <a href='#Portfolio'>
                                 <li>portfolio</li>
                                 <div className={styles.dots}></div>
                             </a>

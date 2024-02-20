@@ -1,0 +1,109 @@
+.portfolioSection {
+    background-color: rgba(35, 79, 111, 1);
+    color: white;
+}
+
+.portfolio {
+    display: flex;
+    align-items: center;
+    padding: 10vh 10vw;
+}
+
+.portfolio h2 {
+    font-size: 5rem;
+}
+
+.line {
+    border: 1px solid white;
+    height: 0px;
+    width: 60vw;
+    margin-left: 3%;
+}
+
+.allFeaturedProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featuredPorjectsHeader {
+
+}
+
+.featuredProjectsHeader h3 {
+    font-size: 3rem;
+}
+
+.project {
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 4% 0%;
+    width: 70vw;
+
+}
+
+.imageContainer {
+    height: 22vw;
+    width: 22vw;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 90%;
+    height: 90%;
+    border: 1px solid white;
+    border-radius: 4px;
+    overflow: hidden;
+    filter: saturate(40%);
+}
+
+.image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    filter: saturate(100%);
+}
+
+.projectInfo {
+    height: 50%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.projectTitle {
+    font-size: 2rem;
+    color: rgb(255, 223, 163);
+    margin-left: 2vw;
+    padding: 10px;
+}
+
+.projectDescription {
+    height: 100%;
+    width: 100%;
+    background-color: hsla(205, 55%, 15%, 0.897);
+    border-radius: 4px;
+    color: white;
+    padding: .75vw 1.1vw;
+}
+
+.projectLanguages {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    padding: 10px;
+}
+
+.lang {
+    background-color: hsla(246, 20%, 19%, 0.647);
+    border-radius: 10px;
+    padding: 1px 8px;
+    color: white;
+}
