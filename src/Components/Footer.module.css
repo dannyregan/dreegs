@@ -1,0 +1,37 @@
+.footerContainer {
+    background-color: rgba(35, 79, 111, 1);
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ulContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.icon {
+    height: 4vw;
+}
+
+.footerContainer p {
+    color: white;
+    font-size: .75rem;
+    font-weight: 100;
+}

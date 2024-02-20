@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import styles from './Nav.module.css';
-import headshot from '../images/fergs169.jpg'
 import tallPortrail from '../images/editTaller.jpg'
 
 export default function Nav() {
@@ -35,31 +34,32 @@ export default function Nav() {
         <>
             <div className={styles.bannerContainer}>
                 <div className={styles.bannerImg}>
-                    <img src={tallPortrail}></img>
+                    <img src={tallPortrail} alt='Danny Regan'></img>
                 </div>
                 <div className={styles.nav}>
                     <div className={styles.navDivLeft}>
-                        <p className={styles.initials}>DR</p>
+                        <a href='#'><p className={styles.initials}>DR</p></a>
                     </div>
-                    <div className={styles.navDivRight}>
+                    <div className={styles.navDivCenter}>
                         <ul className={styles.navTabs}>
                             <a href='#About Me'>
-                                <li>About Me</li>
+                                <li>about me</li>
                                 <div className={styles.dots}></div>
                             </a>
                             <a href="#Projects">
-                                <li>Projects</li>
+                                <li>portfolio</li>
                                 <div className={styles.dots}></div>
                             </a>
                             <a href="#Resume">
-                                <li>Resume</li>
-                                <div className={styles.dots}></div>
-                            </a>
-                            <a href="#">
-                                <li>Blog</li>
+                                <li>resume</li>
                                 <div className={styles.dots}></div>
                             </a>
                         </ul>
+                    </div>
+                    <div className={styles.navDivRight}>
+                        <a href='#'>
+                            <p className={styles.initials}>blog</p>
+                        </a>
                     </div>
                 </div>
                 <div className={styles.dannyRegan}>
