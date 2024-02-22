@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import styles from './Nav.module.css';
 import hero from '../images/Hero 2.JPG';
+import hero3 from '../images/Hero 3.JPG';
 
 export default function Nav() {
     // useEffect(() => {
@@ -33,34 +34,21 @@ export default function Nav() {
     return (
         <>
             <div className={styles.bannerContainer}>
+                <div className={styles.loadIn}><p>Hi, I'm Danny.</p></div>
                 <div className={styles.bannerImg}>
-                    <img src={hero} alt='Danny Regan'></img>
+                    <img src={hero3} alt='Danny Regan'></img>
                 </div>
                 <div className={styles.nav}>
                     <div className={styles.navDivLeft}>
                         <a href='#'><p className={styles.initials}>DR</p></a>
                     </div>
-                    <div className={styles.navDivCenter}>
+                    <div className={styles.navDivRight}>
                         <ul className={styles.navTabs}>
-                            <a href='#Portfolio'>
-                                <li>Portfolio</li>
-                                <div className={styles.dots}></div>
-                            </a>
-                            <a href='#About Me'>
-                                <li>About</li>
-                                <div className={styles.dots}></div>
-                            </a>
-                            <a href="#Resume">
-                                <li>Resume</li>
-                                <div className={styles.dots}></div>
-                            </a>
+                            <a href='#Portfolio'><li>Portfolio</li></a>
+                            <a href='#About Me'><li>About</li></a>
+                            <a href="#Resume"><li>Resume</li></a>
                         </ul>
                     </div>
-                    {/* <div className={styles.navDivRight}>
-                        <a href='#'>
-                            <p className={styles.initials}>blog</p>
-                        </a>
-                    </div> */}
                 </div>
                 <div className={styles.dannyRegan}>
                     {/* <h1 className={styles.danny}>Danny</h1>
@@ -76,7 +64,7 @@ export default function Nav() {
                                 <li><span>Photographer,</span></li>
                                 <li><span>Biologist,</span></li>
                                 <li><span>Gamer,</span></li>
-                                <li><span>Cofee-addict,</span></li>
+                                <li><span>Cofee-lover,</span></li>
                                 <li><span>Meditator,</span></li>
                                 <li><span>Guitarist,</span></li>
                                 <li><span>Adventurist,</span></li>
@@ -96,8 +84,8 @@ export default function Nav() {
                             <a href='#' className={[styles.button, styles.downloadMyResume]}><button>Download My Resume</button></a>
                         </div>
                     </div>      */}
-                <div className={styles.motto}>
-                    <p>some text, a motto for the bottom right of banner image.</p>
+                <div className={styles.letsWork}>
+                    <p>Let's work together.</p>
                 </div>
                 
                 {/* <div class="scrolling-text-container">
