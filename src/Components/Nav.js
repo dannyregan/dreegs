@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import styles from './Nav.module.css';
-import tallPortrail from '../images/editTaller.jpg'
+import hero from '../images/Hero.jpg';
 
 export default function Nav() {
     useEffect(() => {
@@ -34,7 +34,7 @@ export default function Nav() {
         <>
             <div className={styles.bannerContainer}>
                 <div className={styles.bannerImg}>
-                    <img src={tallPortrail} alt='Danny Regan'></img>
+                    <img src={hero} alt='Danny Regan'></img>
                 </div>
                 <div className={styles.nav}>
                     <div className={styles.navDivLeft}>
@@ -77,15 +77,34 @@ export default function Nav() {
                 <div className={styles.motto}>
                     <p>some text, a motto for the bottom right of banner image.</p>
                 </div>
+                
+                {/* <div class="scrolling-text-container">
+    <div class="scrolling-text-inner" style="--marquee-speed: 20s; --direction:scroll-left" role="marquee">
+        <div class="scrolling-text">
+            <div class="scrolling-text-item">Your First Announcement</div>
+            <div class="scrolling-text-item">Your Second Announcement</div>
+            <!-- Add More Items Here -->
+        </div>
+    </div>
+</div> */}
+                <div className={styles.nameContainer}>
+                    <div className={styles.nameInner} style={{'--marquee-speed': '20s', '--direction': 'scroll-left'}} role='marquee'>
+                        <div className={styles.nameText}>
+                            <h1 className={styles.scrollingName}>Danny Regan</h1>
+                            <h1 className={styles.scrollingName}><span className={styles.spacer}>—</span></h1>
+                        </div>
+                        <div className={styles.nameText}>
+                            <h1 className={styles.scrollingName}>Danny Regan</h1>
+                            <h1 className={styles.scrollingName}><span className={styles.spacer}>—</span></h1>
+                        </div>
+                        <div className={styles.nameText}>
+                            <h1 className={styles.scrollingName}>Danny Regan</h1>
+                            <h1 className={styles.scrollingName}><span className={styles.spacer}>—</span></h1>
+                        </div> 
+                    </div>
+                </div>
             </div>
         </>
     )
 }
-
-
-
-
-
-
-
 

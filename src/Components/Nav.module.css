@@ -2,15 +2,20 @@
 
 .bannerContainer {
   width: 100vw;
-  max-height: 100vh;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
   display: flex;
 }
 
+.bannerImg {
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
 .bannerImg img {
   width: 100vw;
-  max-height: 100%;
+  min-height: 100%;
   object-fit: cover;
 }
 
@@ -22,7 +27,6 @@
     align-items: center;
     position: absolute;
     width: 100%;
-    background-color: hsla(205, 52%, 29%, 0.5);
   }
 
   .navDivLeft a {
@@ -122,6 +126,66 @@
   width: 28vw;
   padding: 1%;
 }
+
+.nameContainer {
+  /* width: 100vw; */
+  overflow: hidden;
+  position: absolute;
+  top: 66.7vh;
+}
+
+.nameInner {
+  white-space: nowrap;
+  display: flex;
+}
+
+.nameText {
+  display: flex;
+}
+
+.scrollingName {
+  color: white;
+  font-size: 10rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+.nameInner div {
+  animation: scrollLeft 10s linear infinite;
+}
+
+.spacer {
+  padding: 0px 3vw;
+}
+
+@keyframes scrollLeft {
+  0% {
+      transform: translateX(0%);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* .nameWrapper h1 {
+  display: inline-block;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%)
+  }
+  100% {
+    transform: translateX(-100%)
+  }
+} */
 
 .danny,
 .regan {
@@ -224,3 +288,7 @@ button:hover {
 .menuContainer a:hover {
   width: 30px;
 }
+
+
+
+
