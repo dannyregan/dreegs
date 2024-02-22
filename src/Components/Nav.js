@@ -3,32 +3,32 @@ import styles from './Nav.module.css';
 import hero from '../images/Hero 2.JPG';
 
 export default function Nav() {
-    useEffect(() => {
-        description()
-    }, [])
+    // useEffect(() => {
+    //     description()
+    // }, [])
 
-    const [a, setA] = useState('A');
-    const time = 1050 * 7;
+    // const [a, setA] = useState('A');
+    // const time = 1050 * 7;
 
-    useEffect(() => {
-        setTimeout(() => {
-            setA('');
-        }, time)
-    }, [])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setA('');
+    //     }, time)
+    // }, [])
 
-    const [noun, setNoun] = useState(['Rock Climber.'])
+    // const [noun, setNoun] = useState(['Rock Climber.'])
 
-    function description() {
-        const nouns = ['Cyclist.', 'Photographer.', 'Runner.', 'Biologist.', 'Problem Solver.', 'Front End Developer.'];
-        var i = 0;
-        var interval = setInterval(function() {
-            let word = nouns[i++];
-            if (i === nouns.length) {
-                clearInterval(interval);
-            }
-            setNoun(word);
-        }, 1000)
-    }
+    // function description() {
+    //     const nouns = ['Cyclist.', 'Photographer.', 'Runner.', 'Biologist.', 'Problem Solver.', 'Front End Developer.'];
+    //     var i = 0;
+    //     var interval = setInterval(function() {
+    //         let word = nouns[i++];
+    //         if (i === nouns.length) {
+    //             clearInterval(interval);
+    //         }
+    //         setNoun(word);
+    //     }, 1000)
+    // }
 
     return (
         <>
@@ -65,8 +65,29 @@ export default function Nav() {
                 <div className={styles.dannyRegan}>
                     {/* <h1 className={styles.danny}>Danny</h1>
                     <h1 className={styles.regan}>Regan</h1> */}
-                    <p className={styles.frontEnd}>{a} 
-                     <span> {noun}</span></p>
+                    {/* <p className={styles.frontEnd}>{a} 
+                     <span> {noun}</span></p> */}
+                     <div className={styles.frontEnd}>
+                        <div className={styles.qualitiesContent}>
+                            <ol>
+                                <li><span>A Rock Climber,</span></li>
+                                <li><span>Cyclist,</span></li>
+                                <li><span>Runner,</span></li>
+                                <li><span>Photographer,</span></li>
+                                <li><span>Biologist,</span></li>
+                                <li><span>Gamer,</span></li>
+                                <li><span>Cofee-addict,</span></li>
+                                <li><span>Meditator,</span></li>
+                                <li><span>Guitarist,</span></li>
+                                <li><span>Adventurist,</span></li>
+                                <li><span>Hiker,</span></li>
+                                <li><span>Friend,</span></li>
+                                <li><span>Teammate,</span></li>
+                                <li><span>Problem Solver,</span></li>
+                                <li><span>Front End Developer.</span></li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>     
                 {/* <div className={styles.valueContainer}>
                         <p className={styles.valueStatement}>Here's a text box about my stupid little value statement that says what I bring to the table in a single sentence.</p>

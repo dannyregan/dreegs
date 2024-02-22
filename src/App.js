@@ -14,7 +14,7 @@ function App() {
       <Portfolio id='Portfolio'/>
       <AboutMe id='About Me'/>
       <Footer />
-      <MenuBar />
+      {/* <MenuBar /> */}
       <Scrollbar />
     </>
 
