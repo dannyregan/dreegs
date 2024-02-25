@@ -102,12 +102,12 @@
   }
 
   .initials {
-    border: 2px solid white;
+    border: 1px solid white;
     color: white;
     border-radius: 4px;
-    padding: .3rem;
+    padding: 4px;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 200;
     height: 35px;
     width: 35px;
     display: flex;

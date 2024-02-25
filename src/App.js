@@ -11,8 +11,8 @@ function App() {
     <>
       
       <Nav />
-      <Portfolio id='Portfolio'/>
-      <AboutMe id='About Me'/>
+      {/* <Portfolio id='Portfolio'/> */}
+      {/* <AboutMe id='About Me'/> */}
       <Footer />
       {/* <MenuBar /> */}
       <Scrollbar />
