@@ -3,7 +3,8 @@ import styles from './Contact.module.css'
 
 export default function Contact() {
     return (
-        <div className={styles.container}>
+        <div className={styles.containerWrapper}>
+            <div className={styles.container}>
             <h2>Send me a message.</h2>
             <div className={styles.myInfo}>
                 <h3>My email</h3>
@@ -18,7 +19,7 @@ export default function Contact() {
                         </div>
                         <div className={styles.formQuestion}>
                             <label for='yourEmail'>What's your email?</label>
-                            <input type='text' id='yourEmail' placeholder="jamesmith@gmail.com"></input>
+                            <input type='text' id='yourEmail' placeholder="jamessmith@gmail.com"></input>
                         </div>
                     </div>
                     <div className={styles.formMiddle}>
@@ -31,6 +32,7 @@ export default function Contact() {
                         <input type='submit' value='Send Message'></input>
                     </div>
                 </form>
+            </div>
             </div>
         </div>
         

@@ -4,33 +4,6 @@ import hero from '../images/Hero 2.JPG';
 import hero3 from '../images/Hero 3.JPG';
 
 export default function Nav() {
-    // useEffect(() => {
-    //     description()
-    // }, [])
-
-    // const [a, setA] = useState('A');
-    // const time = 1050 * 7;
-
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setA('');
-    //     }, time)
-    // }, [])
-
-    // const [noun, setNoun] = useState(['Rock Climber.'])
-
-    // function description() {
-    //     const nouns = ['Cyclist.', 'Photographer.', 'Runner.', 'Biologist.', 'Problem Solver.', 'Front End Developer.'];
-    //     var i = 0;
-    //     var interval = setInterval(function() {
-    //         let word = nouns[i++];
-    //         if (i === nouns.length) {
-    //             clearInterval(interval);
-    //         }
-    //         setNoun(word);
-    //     }, 1000)
-    // }
-
     return (
         <>
             <div className={styles.bannerContainer}>
@@ -41,6 +14,9 @@ export default function Nav() {
                 <div className={styles.nav}>
                     <div className={styles.navDivLeft}>
                         <a href='#'><p className={styles.initials}>DR</p></a>
+                    </div>
+                    <div className={styles.navDivCenter}>
+                        <p>This website is currently under construction.</p>
                     </div>
                     <div className={styles.navDivRight}>
                         <ul className={styles.navTabs}>

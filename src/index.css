@@ -24,3 +24,7 @@ body {
   font-family: "Raleway";
   font-weight: 300;
 }
+
+html {
+  background-color: hsl(205, 30%, 8%);
+}
