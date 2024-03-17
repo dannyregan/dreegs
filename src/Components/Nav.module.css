@@ -9,10 +9,11 @@
   border-bottom-left-radius: 50%; */
   background-color: hsl(205, 30%, 8%);
   z-index: 5;
-  animation: loading 750ms ease-in 2.5s forwards;
+  animation: loading 750ms ease-in 1.5s forwards;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: visible;
 }
 
 .loadIn p {
@@ -33,18 +34,16 @@
 @keyframes loading {
   0% {
     opacity: 1;
-    height: 100vh;
     border-bottom-left-radius: 0vw;
-    /* border-bottom-right-radius: 0vw; */
   }
   50% {
-    border-bottom-left-radius: 50vw;
-    border-bottom-right-radius: 50vw;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
     transform: translateY(0%);
   }
   100% {
-    border-bottom-left-radius: 50vw;
-    border-bottom-right-radius: 50vw;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
     transform: translateY(-100%);
   }
 }
@@ -90,8 +89,9 @@
     left: 0;
     width: 100%;
     max-width: 100%;
-    animation: webpageAppear 700ms ease-out 2.5s;
+    animation: webpageAppear 700ms ease-out 1.5s;
     color: white;
+    z-index: 1;
   }
 
   .navDivLeft a {
@@ -164,6 +164,10 @@
     background-size: 100% 1px;
   }
 
+  a.active {
+    background-color: red;
+  }
+
   .navTabs a li {
     width: max-content;
     margin-right: 10px;
@@ -194,7 +198,7 @@
   left: 7%;
   font-size: 3vw;
   color: white;
-  animation: webpageAppear 800ms ease-out 2.5s;
+  animation: webpageAppear 800ms ease-out 1.5s;
 }
 
 .frontEnd {
@@ -216,7 +220,7 @@
 }
 
 .qualitiesContent ol li {
-  animation: slide-up 18s 4.25s forwards;
+  animation: slide-up 18s 3.25s forwards;
 }
 
 @keyframes slide-up {
@@ -273,7 +277,7 @@
     transition:
       background-size 0.3s,
       background-position 0s 0.3s;
-  animation: webpageAppear 800ms ease-out 2.5s;
+  animation: webpageAppear 800ms ease-out 1.5s;
 }
 
 .letsWork p {
@@ -292,7 +296,7 @@
   overflow: hidden;
   position: absolute;
   top: 66.7vh;
-  animation: webpageAppear 700ms ease-out 2.5s;
+  animation: webpageAppear 700ms ease-out 1.5s;
 }
 
 .nameInner {

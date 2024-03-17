@@ -1,15 +1,15 @@
 import React, {useState, useEffect} from "react";
 import styles from './Nav.module.css';
-import hero3 from '../images/Hero 3.JPG';
+// import hero3 from '../images/Hero 3.JPG';
 
 export default function Nav() {
     return (
         <>
-            <div className={styles.bannerContainer}>
-                <div className={styles.loadIn}><p>Hi, I'm Danny.</p></div>
-                <div className={styles.bannerImg}>
+            {/* <div className={styles.bannerContainer}> */}
+                {/* <div className={styles.loadIn}><p>Hi, I'm Danny.</p></div> */}
+                {/* <div className={styles.bannerImg}>
                     <img src={hero3} alt='Danny Regan'></img>
-                </div>
+                </div> */}
                 <div className={styles.nav}>
                     <div className={styles.navDivLeft}>
                         <a href='/Home'><p className={styles.initials}>DR</p></a>
@@ -19,13 +19,16 @@ export default function Nav() {
                     </div>
                     <div className={styles.navDivRight}>
                         <ul className={styles.navTabs}>
-                            <a href='/Portfolio'><li>Portfolio</li></a>
+                            <CustomLink href='/Portfolio'>Portfolio</CustomLink>
+                            <CustomLink href='/AboutMe'>About</CustomLink>
+                            <CustomLink href='/Resume'>Resume</CustomLink>
+                            {/* <a href='/Portfolio'><li>Portfolio</li></a>
                             <a href='/AboutMe'><li>About</li></a>
-                            <a href="/Resume"><li>Resume</li></a>
+                            <a href="/Resume"><li>Resume</li></a> */}
                         </ul>
                     </div>
                 </div>
-                <div className={styles.dannyRegan}>
+                {/* <div className={styles.dannyRegan}>
                      <div className={styles.frontEnd}>
                         <div className={styles.qualitiesContent}>
                             <ol>
@@ -66,9 +69,15 @@ export default function Nav() {
                             <h1 className={styles.scrollingName}><span className={styles.spacer}>—</span></h1>
                         </div> 
                     </div>
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
         </>
     )
 }
 
+function CustomLink({href, children, ...props}) {
+    const path = window.location.path;
+    return (
+        <a href={href} className={path === href ? "active" : ""}><li>{children}</li></a>
+    )
+}

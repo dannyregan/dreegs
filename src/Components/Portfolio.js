@@ -2,13 +2,15 @@ import React from "react";
 import styles from './Portfolio.module.css'
 import PortfolioFeature from "./Portfolio.feature.js";
 import proj1 from '../images/editShorter.jpg'
+import style from "./Nav.module.css";
 
 const Portfolio = () => {
     return (
         <>
             <div className={styles.portfolioSection}>
+            <div className={style.loadIn}><p>Portfolio.</p></div>
                 <div className={styles.portfolio}>
-                    <h2 id='portfolio'>Portfolio</h2>
+                    <h1>Portfolio</h1>
                     <div className={styles.line}></div>
                 </div>
                 <div className={styles.allFeaturedProjects}>
