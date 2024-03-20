@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Components/Nav";
 import AboutMe from "./Components/AboutMe";
-import MenuBar from "./Components/Menu";
+// import MenuBar from "./Components/Menu";
 import Portfolio from "./Components/Portfolio";
 import Footer from './Components/Footer';
 import Scrollbar from "./Components/Scrollbar";
@@ -12,9 +12,15 @@ import Resume from "./Components/Resume";
 function App() {
   let NavSelection;
   switch (window.location.pathname) {
+    case '/home':
+      NavSelection = Home
+      break
     case '/Home':
       NavSelection = Home
       break
+    case '/':
+        NavSelection = Home
+        break
     case '/Portfolio':
       NavSelection = Portfolio
       break

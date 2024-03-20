@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import styles from './Nav.module.css';
 // import hero3 from '../images/Hero 3.JPG';
 

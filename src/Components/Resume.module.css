@@ -1,11 +1,21 @@
 .page {
-    height: 100vh;
+    height: 160vh;
+    min-height: fit-content;
     color: white;
     background-color: grey;
+    display: flex;
+    justify-content: center;
 }
 
 .page h1 {
     text-align: center;
     position: relative;
     top: 50%
+}
+
+embed {
+    position: relative;
+    width: 80vw;
+    height: 79%;
+    top: 10%;
 }
