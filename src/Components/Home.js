@@ -26,7 +26,8 @@ export default function Home() {
                     <li><span>Friend,</span></li>
                     <li><span>Teammate,</span></li>
                     <li><span>Problem Solver,</span></li>
-                    <li><span>Front End Developer.</span></li>
+                    <li><span>Front End Developer</span></li>
+                    <li><span>Software Engineer.</span></li>
                 </ol>
             </div>
         </div>
