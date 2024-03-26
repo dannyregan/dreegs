@@ -390,7 +390,7 @@
     max-width: 100vw;
     font-size: 10px;
     justify-content: space-evenly;
-    margin-top: 15px;
+    margin-top: 5px;
   }
   .navTabs {
     font-size: 15px;
@@ -414,7 +414,7 @@
     display: none;
   }
   .dannyRegan {
-    top: 70%;
+    top: 60%;
     left: -2px;
     font-size: 35px;
     width: 100vw;
@@ -432,7 +432,7 @@
     display: none;
   }
   .nameContainer {
-    top: 85vh;
+    top: 75vh;
   }
   .loadIn p {
     text-align: center;
