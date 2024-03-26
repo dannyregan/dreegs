@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import about from "./About.module.css";
 import styles from "./Nav.module.css";
 import introduction from "../images/wideIntro.JPG"
 import me from "../images/meAndZ.JPG"
 import myWork from "../images/lookingAtRocks.JPG"
 import myCode from '../images/Hero 3.JPG'
+import joel from "../images/jl.jpg"
+import cheresa from "../images/Cheresa-Taing-circle.jpeg"
 
 
 export default function AboutMe() {
+    const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTestimonialIndex((prevIndex) =>
+        prevIndex === 0 ? 1 : 0 // Switch between testimonial indices
+      );
+    }, 12000);
+
+    return () => clearInterval(intervalId); // Clear interval on component unmount
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // Run only once on component mount
+      
     return (
         <div className={about.page}>
             <div className={styles.loadIn}><p>About.</p></div>
@@ -16,7 +32,10 @@ export default function AboutMe() {
                 <div className={about.topText}>
                     <h1>Writing code and teaching environmental science to underrepresented youth.</h1>
                 </div>
-                <img src={introduction} className={about.bannerPics} ></img>
+                <div className={about.bannerImgContainer}>
+                    <img src={introduction} className={about.bannerPics} ></img>
+                    <p>Roslyn and I teaching students at Lake Mead National Recreation Area.</p>
+                </div>
                 <div className={about.line}></div>
                 <div className={about.aboutInfoContainer}>
                     <div className={about.me}>
@@ -45,8 +64,27 @@ export default function AboutMe() {
                                 </div>
 
                         </div>
-                        <div></div>
                     </div>
+                    <div className={about.testimonialsSection}>
+                        <div className={`${about.testimonial} ${currentTestimonialIndex === 0 ? about.active : ""}`}>
+                            <img src={joel} alt="Joel Leo Emerson" />
+                            <div className={about.testimonialInfo}>
+                                <p className={about.quote}>"Danny is as good as they come. Intrinsically and pro-socially motivated, he is a force for good in the world, curious, creative, good humored, yet humble and emotionally mature. He has always ranked among my most impressive students for all these positive traits (of the 1600 and counting students I have had in classrooms over the years)."</p>
+                                <p className={about.name}>Joel Leo Emerson</p>
+                                <p className={about.relationship}>Teacher</p>
+                            </div>
+                        </div>
+                        <div className={`${about.testimonial} ${currentTestimonialIndex === 1 ? about.active : ""}`}>
+                            <img src={cheresa} alt="Cheresa Taing" />
+                            <div className={about.testimonialInfo}>
+                                <p className={about.quote}>"What sets Daniel apart is his drive and dedication to problem-solving and program accessibility, which have greatly benefited our organization and the communities we serve. Daniel's passion for computer science is evident in his program management approach. He consistently seeks opportunities for growth and has impressed us with his ability to excel in diverse and challenging environments."</p>
+                                <p className={about.name}>Cheresa Taing</p>
+                                <p className={about.relationship}>Manager</p>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>

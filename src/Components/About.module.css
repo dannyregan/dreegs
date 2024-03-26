@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
 .page {
     height: auto;
     min-height: 100% !important;
@@ -35,8 +38,27 @@
 
 .bannerPics {
     width: 85vw;
-    padding: 3vw;
-    margin-bottom: 5vh;
+    margin: 3vw 3vw 10vw 3vw;
+}
+
+.bannerImgContainer {
+    position: relative;
+}
+
+.bannerImgContainer img {
+    display: block;
+}
+
+.bannerImgContainer p {
+    position: absolute;
+    z-index: 2;
+    bottom: 11vw;
+    right: 4vw;
+    font-size: 1vw;
+    font-style: italic;
+    background-color: hsla(208, 32%, 8%, 0.9);
+    padding: 2px;
+    border-radius: 3px;
 }
 
 /* .line {
@@ -61,6 +83,7 @@
     overflow-x: hidden;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    height: 50vh;
 }
 
 .information {
@@ -135,4 +158,62 @@
 .title {
     border-bottom: none;
     font-size: 5vw;
+}
+
+
+/* TESTIMONIALS */
+
+.testimonialsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: hsl(208, 32%, 8%);
+}
+
+.testimonial {
+    display: none; 
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+
+.testimonial.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    width: 80%;
+}
+
+.testimonial img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+    padding: 15px;
+}
+
+.testimonialInfo {
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+    padding: 15px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.quote {
+    font-family: "Roboto Serif";
+    font-weight: 200;
+    font-style: italic;
+    padding: 5px;
+}
+
+.name {
+    font-weight: 600;
+    padding: 5px;
 }

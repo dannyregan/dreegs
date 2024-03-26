@@ -28,3 +28,13 @@ body {
 html {
   background-color: hsl(205, 30%, 8%);
 }
+
+.roboto-serif-Quotes {
+  font-family: "Quotes";
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+}
