@@ -1,4 +1,12 @@
-.portfolioSection {
+.portfolioSection h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* .portfolioSection {
     background-color: rgba(35, 79, 111, 1);
     color: white;
 }
@@ -106,4 +114,10 @@
     border-radius: 10px;
     padding: 1px 8px;
     color: white;
+} */
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        text-align: center;
+    }
 }

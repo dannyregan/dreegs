@@ -19,7 +19,7 @@ export default function Footer() {
                     <a href='http://www.github.com/dannyregan' target='_blank'><li><img src={whiteGithub} className={styles.icon}></img></li></a>
                     <a href='http://www.linkedin.com/in/dannyregan' target='_blank'><li><img src={whitelink} className={styles.icon}></img></li></a>
                     <a href='http://www.instagram.com/dannyregan17' target='_blank'><li><img src={whiteInsta} className={styles.icon}></img></li></a>
-                    <a><li><img src={whiteEmail} className={styles.icon}></img></li></a>
+                    {/* <a><li><img src={whiteEmail} className={styles.icon}></img></li></a> */}
                 </ul>
             </div>
             <div>

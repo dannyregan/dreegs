@@ -2,11 +2,20 @@ import React, { useState, useEffect } from "react";
 import about from "./About.module.css";
 import styles from "./Nav.module.css";
 import introduction from "../images/wideIntro.JPG"
+import introductionForMobile from "../images/introduction.JPG"
 import me from "../images/meAndZ.JPG"
 import myWork from "../images/lookingAtRocks.JPG"
 import myCode from '../images/Hero 3.JPG'
 import joel from "../images/jl.jpg"
 import cheresa from "../images/Cheresa-Taing-circle.jpeg"
+import alex from "../images/Alex.jpg"
+import bob from "../images/bobAndMark.JPG"
+import collin from '../images/collin.JPG'
+import goldenNugget from "../images/goldenNugget.JPG"
+import grandCanyon from "../images/grandCanyonSunset.jpg"
+import nightClimb from "../images/nightClimb.jpg"
+import stratocaster from '../images/stratocaster.jpg'
+// import Carousel from "./Carousel";
 
 
 export default function AboutMe() {
@@ -23,6 +32,10 @@ export default function AboutMe() {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Run only once on component mount
+
+
+    const images = [alex, bob, collin, goldenNugget, grandCanyon, nightClimb, stratocaster];
+
       
     return (
         <div className={about.page}>
@@ -34,8 +47,20 @@ export default function AboutMe() {
                 </div>
                 <div className={about.bannerImgContainer}>
                     <img src={introduction} className={about.bannerPics} ></img>
+                </div>
+                <div className={about.bannerImgContainerMobile}>
+                    <img src={introductionForMobile} className={about.bannerPicsMobile} ></img>
                     <p>Roslyn and I teaching students at Lake Mead National Recreation Area.</p>
                 </div>
+                <div className={about.scrollMobile}>
+                    <p>S</p>
+                    <p>C</p>
+                    <p>R</p>
+                    <p>O</p>
+                    <p>L</p>
+                    <p>L</p>
+                </div>
+               
                 <div className={about.line}></div>
                 <div className={about.aboutInfoContainer}>
                     <div className={about.me}>
@@ -83,6 +108,12 @@ export default function AboutMe() {
                             </div>
                         </div>
                     </div>
+                    {/* <div className={about.carouselWrapper}>
+                        <h2>My photos</h2>
+                        <div className={about.carouselContainer}>
+                            <Carousel images={images} />
+                        </div>
+                    </div> */}
 
 
                 </div>

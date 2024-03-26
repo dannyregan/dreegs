@@ -41,12 +41,26 @@
     margin: 3vw 3vw 10vw 3vw;
 }
 
+.bannerPicsMobile {
+    display: none;
+    width: 85vw;
+    margin: 3vw 3vw 10vw 3vw;
+}
+
 .bannerImgContainer {
     position: relative;
 }
 
 .bannerImgContainer img {
     display: block;
+}
+
+.bannerImgContainerMobile {
+    position: relative;
+}
+
+.bannerImgContainerMobile img {
+    display: none;
 }
 
 .bannerImgContainer p {
@@ -61,6 +75,22 @@
     border-radius: 3px;
 }
 
+.bannerImgContainerMobile p {
+    position: absolute;
+    z-index: 2;
+    bottom: 11vw;
+    right: 4vw;
+    font-size: 1vw;
+    font-style: italic;
+    background-color: hsla(208, 32%, 8%, 0.9);
+    padding: 2px;
+    border-radius: 3px;
+    display: none;
+}
+
+.scrollMobile {
+    display: none;
+}
 /* .line {
     height: 0px;
     border: .5px solid white;
@@ -192,7 +222,7 @@
     height: 200px;
     object-fit: cover;
     border-radius: 100%;
-    padding: 15px;
+    padding: 35px;
 }
 
 .testimonialInfo {
@@ -200,10 +230,11 @@
     background-color: white;
     border-radius: 3px;
     padding: 15px;
-    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    height: 100%;
+    max-width: 700px;
 }
 
 .quote {
@@ -216,4 +247,74 @@
 .name {
     font-weight: 600;
     padding: 5px;
+}
+
+/* CAROUSEL */
+
+.carouselWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    width: 100vw;
+    height: 100vh;
+}
+
+.carouselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    max-width: 85vw; /* Adjust the width as needed */
+    overflow: hidden; /* Hide overflow */
+}
+
+@media only screen and (max-width: 480px) {
+    .me {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .infoSection {
+        width: 80vw;
+    }
+    .title {
+        font-size: 30px;
+        padding-bottom: 5px;
+        padding-top: 20px;
+    }
+    .mainPs {
+        font-size: 15px;
+    }
+    .bannerPics {
+        display: none;
+    }
+    .bannerImgContainerMobile img {
+        display: block;
+        margin-bottom: 400px;
+        padding: 25px 0px 60px 0px;
+    }
+    .bannerImgContainer img {
+        display: none;
+    }
+    .bannerImgContainerMobile p {
+        display: none;
+    }
+    .scrollMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 71vh;
+        font-size: 10px;
+    }
+    .scrollMobile p {
+        padding: 10px;
+        color: rgba(250, 250, 250, .3)
+    }
+    .page h1 {
+        font-size: 25px;
+
+    }
 }

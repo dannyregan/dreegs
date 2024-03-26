@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <div className={styles.containerWrapper}>
             <div className={styles.container}>
-            <h2>Send me a message.</h2>
+            <h2>Send me a message. (Under Construction)</h2>
             <div className={styles.myInfo}>
                 <h3>My email</h3>
                     <p>d.regan@columbia.edu</p>

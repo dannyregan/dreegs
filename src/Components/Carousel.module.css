@@ -1,0 +1,13 @@
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease; /* Add transition for smooth animation */
+}
+
+.carousel img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+}
+  
+  .carousel img.hidden {
+    opacity: 0;
+  }
+  
