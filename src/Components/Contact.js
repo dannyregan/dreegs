@@ -8,7 +8,7 @@ export default function Contact() {
             <h2>Send me a message. (Under Construction)</h2>
             <div className={styles.myInfo}>
                 <h3>My email</h3>
-                    <p>d.regan@columbia.edu</p>
+                    <p>joeysolimini@gmail.com</p>
             </div>
             <div className={styles.formContainer}>
                 <form>
