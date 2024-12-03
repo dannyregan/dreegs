@@ -73,7 +73,7 @@ function App() {
           <Route path="/AboutMe" element={<AboutMe />} />
           <Route path="/Resume" element={<Resume />} />
         </Routes>
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
         <Scrollbar />
       </div>

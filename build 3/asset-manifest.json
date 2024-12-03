@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4638187a.css",
+    "main.js": "/static/js/main.8bef4a77.js",
+    "static/js/592.06709166.chunk.js": "/static/js/592.06709166.chunk.js",
+    "static/media/goldenNugget.JPG": "/static/media/goldenNugget.ada4ee237eefe7fad837.JPG",
+    "static/media/collin.JPG": "/static/media/collin.e02cf78444c1c70305c1.JPG",
+    "static/media/Hero 3.JPG": "/static/media/Hero 3.8b0b4b78af9d5b9fe6b5.JPG",
+    "static/media/bobAndMark.JPG": "/static/media/bobAndMark.0c12ce9786fd40d70c3f.JPG",
+    "static/media/lookingAtRocks.JPG": "/static/media/lookingAtRocks.28885a75e6b9fd5ca569.JPG",
+    "static/media/meAndZ.JPG": "/static/media/meAndZ.90172ca278ab07cf1658.JPG",
+    "static/media/introduction.JPG": "/static/media/introduction.84035d340d4387aff030.JPG",
+    "static/media/stratocaster.jpg": "/static/media/stratocaster.3ef62df4bca8ca15e6f8.jpg",
+    "static/media/Alex.jpg": "/static/media/Alex.a8fc0e0e5de46107e53e.jpg",
+    "static/media/editShorter.jpg": "/static/media/editShorter.160141c1606a6955233c.jpg",
+    "static/media/wideIntro.JPG": "/static/media/wideIntro.a6069d1b4bc48097984d.JPG",
+    "static/media/nightClimb.jpg": "/static/media/nightClimb.2cbc9798c06bc0aba89a.jpg",
+    "static/media/grandCanyonSunset.jpg": "/static/media/grandCanyonSunset.546e276978bda3bf85e1.jpg",
+    "static/media/Resume.Website.dreegs.docx.pdf": "/static/media/Resume.Website.dreegs.docx.f65118e38e27115fa2df.pdf",
+    "static/media/jl.jpg": "/static/media/jl.d9fba68d176930a021da.jpg",
+    "static/media/Cheresa-Taing-circle.jpeg": "/static/media/Cheresa-Taing-circle.915f0cf5d74c64cf03cc.jpeg",
+    "static/media/nohat.png": "/static/media/nohat.9bd7e4bbb9c27a0e3237.png",
+    "static/media/email logo.png": "/static/media/email logo.a56ef91abe84840d7237.png",
+    "static/media/whiteLinkedIn.png": "/static/media/whiteLinkedIn.abb498c31bd523dd8afe.png",
+    "static/media/github-github-logo-black-symbol-trademark-stencil-label-transparent-png-2846291.png": "/static/media/github-github-logo-black-symbol-trademark-stencil-label-transparent-png-2846291.b0544b168841322a5859.png",
+    "static/media/instagram logo.png": "/static/media/instagram logo.e930bb76c826ed7ea745.png",
+    "static/media/linkedin logo.webp": "/static/media/linkedin logo.ad9aff2c43b75bebca19.webp",
+    "index.html": "/index.html",
+    "main.4638187a.css.map": "/static/css/main.4638187a.css.map",
+    "main.8bef4a77.js.map": "/static/js/main.8bef4a77.js.map",
+    "592.06709166.chunk.js.map": "/static/js/592.06709166.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4638187a.css",
+    "static/js/main.8bef4a77.js"
+  ]
+}
