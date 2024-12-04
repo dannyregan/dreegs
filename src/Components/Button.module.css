@@ -1,0 +1,16 @@
+.buttonLink {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: hsla(240, 6%, 18%, 0.647);
+    border-radius: 10px;
+    padding: 4px 12px; /* Adjusted for better usability */
+    margin-right: 5px;
+    display: inline-block; /* Ensures proper box-model styling */
+    transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth interactions */
+}
+
+.buttonLink:hover {
+    background-color: hsla(240, 6%, 28%, 0.8); /* Lighter shade on hover */
+    transform: scale(1.05); /* Subtle zoom effect */
+}

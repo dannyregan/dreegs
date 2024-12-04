@@ -2,7 +2,7 @@
     height: 160vh;
     min-height: fit-content;
     color: white;
-    background-color: hsl(205, 30%, 8%);
+    background: linear-gradient(180deg, rgba(1, 145, 255, 0.489) 0%, rgba(43,43,49,0) 60%);
     display: flex;
     justify-content: center;
 }

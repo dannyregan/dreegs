@@ -23,7 +23,7 @@ export default function Footer() {
                 </ul>
             </div>
             <div>
-                <p>This website was designed and created by Danny Regan.</p>
+                <p>Designed and developed by Danny Regan. 2024.</p>
             </div>
         </div>
     )

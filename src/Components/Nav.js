@@ -93,7 +93,7 @@ export default function Nav() {
                 <Link to='/Home'><p className={styles.initials}>DR</p></Link>
             </div>
             <div className={styles.navDivCenter}>
-                <p>This website is currently under construction.</p>
+                {/* <p>This website is currently under construction.</p> */}
             </div>
             <div className={styles.navDivRight}>
                 <ul className={styles.navTabs}>

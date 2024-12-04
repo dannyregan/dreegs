@@ -90,7 +90,7 @@ export default function AboutMe() {
                                 <div className={about.information}>
                                 <img src={myCode} alt='Danny Regan and two dogs.' className={about.threePics}/>
                                     <div className={about.overlay}></div>
-                                        <p className={about.mainPs}>As a master’s student, I’m hands-on with a variety of languages and frameworks like Python, JavaScript, HTML, CSS, TypeScript, and React, building and experimenting with everything from complex algorithms to full-stack web apps. I’m always looking for new challenges to solve and projects to build, constantly refining my skills along the way.</p>
+                                        <p className={about.mainPs}>As a master’s student, I’m hands-on with a variety of languages and frameworks like Python, JavaScript, HTML, CSS, TypeScript, and React, building and experimenting with everything from complex algorithms to full-stack web apps. I’m always looking for new challenges to solve and projects to build, refining my skills along the way.</p>
                                 </div>
 
                         </div>
