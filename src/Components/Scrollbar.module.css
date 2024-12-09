@@ -18,9 +18,7 @@
     top: 0;
     right: 0;
     width: 10px;
-    /* height: 100%; */
     background: linear-gradient(to top, #0073ff, #00ccff);
-    /* border-radius: 10px; */
   }
   
   .progressbar:before {
@@ -31,20 +29,7 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(to top, rgb(187, 187, 187), white);
-    /* background: linear-gradient(to top, #0073ff, cyan); */
-    /* filter: blur(10px) */
   }
-  
-  /* .progressbar:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #0073ff, #00ccff);
-    filter: blur(15px)
-  } */
   
   @media only screen and (max-width: 480px) {
     .scrollPath {

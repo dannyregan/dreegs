@@ -1,6 +1,5 @@
 import React from "react";
 import styles from './Portfolio.module.css'
-import Button from "./Button"
 
 const PortfolioFeature = ({ img, title, description, languages, href }) => {
     return (
@@ -25,9 +24,6 @@ const PortfolioFeature = ({ img, title, description, languages, href }) => {
                                 <p key={index} className={styles.lang}>{lang}</p>
                             ))}
                     </div>
-                    {/* <div>
-                        <Button href={href} text={buttonText} />
-                    </div> */}
                 </div>
             </div>
         </a>

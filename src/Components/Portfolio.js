@@ -14,14 +14,9 @@ const Portfolio = () => {
         <div className={styles.portfolioSection}>
             <div className={style.loadIn}><p>Portfolio.</p></div>
             <div className={styles.filler}></div>
-            {/* <h1>This section is under construction.</h1> */}
-            {/* <div className={styles.portfolio}>
-                <h1>Portfolio</h1>
-                <div className={styles.line}></div>
-            </div> */}
                 <div className={styles.allFeaturedProjects}>
                     <div className={styles.featuredProjectsHeader}>
-                        <h3>Featured Projects</h3>
+                        <h1>Featured Projects</h1>
                     </div>
                     <PortfolioFeature 
                         img={leagueMe} 
@@ -47,7 +42,7 @@ const Portfolio = () => {
                 </div>
                 <div className={styles.allFeaturedProjects}>
                     <div className={styles.featuredProjectsHeader}>
-                        <h3>Other Projects</h3>
+                        <h1>Other Projects</h1>
                     </div>
                     <PortfolioFeature 
                         img={musicLibrary} 
@@ -62,6 +57,3 @@ const Portfolio = () => {
 }
 
 export default Portfolio;
-
-
-// A music management app that allows users to simulate and organize a music library. Add and manage users and songs, update song details, delete tracks, and switch between accounts—all through a convenient terminal navigation tool.

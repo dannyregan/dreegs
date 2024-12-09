@@ -1,32 +1,50 @@
 .page {
-    height: 160vh;
-    min-height: fit-content;
+    height: auto;
+    min-height: 100vh;
     color: white;
     background: linear-gradient(180deg, rgba(1, 145, 255, 0.489) 0%, rgba(43,43,49,0) 60%);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.page h1 {
-    text-align: center;
+object {
     position: relative;
-    top: 50%
-}
-
-embed, object {
-    position: relative;
-    width: 80vw;
-    height: 79%;
-    top: 10%;
+    width: 90vw;
+    height: 80vh;
+    top: 50px; 
+    border: none;
 }
 
 @media only screen and (max-width: 480px) {
     .page {
-        height: 100vh;
+        text-align: center;
+        min-height: 76vh;
+        display: flex;
+        flex-direction: column;
     }
-    embed {
-        top: 150px;
-        height: 60%;
-        width: 90vw;
+
+    object {
+        max-width: 80vw;
+        max-height: 60vh; 
+        top: 70px;
+
     }
+
+    .error {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 4px 12px;
+        margin-top: 60px;
+        width: auto;
+    }
+    
 }

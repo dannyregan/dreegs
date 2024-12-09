@@ -4,13 +4,13 @@
     cursor: pointer;
     background-color: hsla(240, 6%, 18%, 0.647);
     border-radius: 10px;
-    padding: 4px 12px; /* Adjusted for better usability */
+    padding: 4px 12px; 
     margin-right: 5px;
-    display: inline-block; /* Ensures proper box-model styling */
-    transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth interactions */
+    display: inline-block; 
+    transition: background-color 0.2s ease, transform 0.2s ease; 
 }
 
 .buttonLink:hover {
-    background-color: hsla(240, 6%, 28%, 0.8); /* Lighter shade on hover */
-    transform: scale(1.05); /* Subtle zoom effect */
+    background-color: hsla(240, 6%, 28%, 0.8); 
+    transform: scale(1.05);
 }

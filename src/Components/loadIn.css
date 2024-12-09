@@ -10,7 +10,6 @@
     background-color: white;
     z-index: 6;
     color: white;
-    /* animation: loading 750ms ease-in 1.5s forwards; */
     display: flex;
     align-items: center;
     justify-content: center;

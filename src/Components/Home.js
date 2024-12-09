@@ -16,17 +16,17 @@ export default function Home() {
                         <li><span>Cyclist,</span></li>
                         <li><span>Runner,</span></li>
                         <li><span>Photographer,</span></li>
+                        <li><span>Guitarist,</span></li>
                         <li><span>Biologist,</span></li>
                         <li><span>Gamer,</span></li>
                         <li><span>Cofee-lover,</span></li>
                         <li><span>Meditator,</span></li>
-                        <li><span>Guitarist,</span></li>
                         <li><span>Adventurist,</span></li>
                         <li><span>Hiker,</span></li>
+                        <li><span>Language Learner,</span></li>
                         <li><span>Friend,</span></li>
                         <li><span>Teammate,</span></li>
                         <li><span>Problem Solver,</span></li>
-                        <li><span>Front End Developer,</span></li>
                         <li><span>Software Engineer.</span></li>
                     </ol>
                 </div>

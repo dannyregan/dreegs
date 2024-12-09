@@ -27,8 +27,6 @@
 }
 
 .content {
-    /* position: relative;
-    top: 200px; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -91,13 +89,8 @@
 .scrollMobile {
     display: none;
 }
-/* .line {
-    height: 0px;
-    border: .5px solid white;
-    width: 90vw;
-    margin: 3vw 0px 3vw 0px;
-} */
 
+/* ================================================================================================= */
 /* The About Me Informative Section */
 
 .aboutInfoContainer {
@@ -137,9 +130,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: hsla(205, 30%, 8%, .95); /* Semi-transparent black overlay */
-    opacity: 0; /* Initially invisible */
-    transition: opacity 0.3s; /* Smooth transition effect */
+    background-color: hsla(205, 30%, 8%, .95);
+    opacity: 0; 
+    transition: opacity 0.3s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,7 +142,7 @@
   .mainPs {
     color: white;
     text-align: center;
-    opacity: 0; /* Initially invisible */
+    opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -170,11 +163,11 @@
   }
   
   .information:hover .overlay {
-    opacity: 1; /* Show overlay on hover */
+    opacity: 1; 
   }
   
   .information:hover .mainPs {
-    opacity: .99; /* Show text on hover */
+    opacity: .99;
   }
 
 .infoSection {
@@ -190,7 +183,7 @@
     font-size: 5vw;
 }
 
-
+/* ================================================================================================= */
 /* TESTIMONIALS */
 
 .testimonialsSection {
@@ -249,13 +242,14 @@
     padding: 5px;
 }
 
+/* ================================================================================================= */
 /* CAROUSEL */
 
 .carouselWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center vertically */
+    justify-content: center;
     width: 100vw;
     height: 100vh;
 }
@@ -263,9 +257,9 @@
 .carouselContainer {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center horizontally */
-    max-width: 85vw; /* Adjust the width as needed */
-    overflow: hidden; /* Hide overflow */
+    justify-content: center;
+    max-width: 85vw;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 480px) {
@@ -275,51 +269,58 @@
         align-items: center;
         height: 100%;
     }
+
     .infoSection {
         width: 80vw;
     }
+
     .title {
         font-size: 30px;
         padding-bottom: 5px;
         padding-top: 20px;
     }
+
     .mainPs {
         font-size: 15px;
     }
+
     .bannerPics {
         display: none;
     }
+
     .bannerImgContainerMobile img {
         display: block;
         margin-bottom: 200px;
         padding: 25px 0px 60px 0px;
     }
+
     .bannerImgContainer img {
         display: none;
     }
+
     .bannerImgContainerMobile p {
         display: none;
     }
-    /* .scrollMobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 71vh;
-        font-size: 10px;
-    }
-    .scrollMobile p {
-        padding: 10px;
-        color: rgba(250, 250, 250, .3)
-    } */
+
     .page h1 {
         font-size: 25px;
     }
+
     .topText {
         width: 90%;
     }
+    
     .testimonialsSection {
         height: 100vh;
+    }
+
+    .scrollMobile {
+        display: block;
+        position: relative;
+        bottom: 180px;
+    }
+    
+    .scrollMobile p {
+        padding-bottom: 20px;
     }
 }

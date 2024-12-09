@@ -3,7 +3,7 @@ a {
 }
 
 .filler {
-    height: 200px;
+    height: 120px;
 }
 
 .portfolioSection h1 {
@@ -11,12 +11,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+   
 }
 
 .portfolioSection {
     background: linear-gradient(180deg, hsla(187, 100%, 50%, 0.438) 0%, rgba(43,43,49,0) 60%);
-    /* background-color: hsl(205, 30%, 8%); */
     color: white;
 }
 
@@ -47,35 +46,36 @@ a {
     width: 90%;
     text-align: center;
     margin: 0;
+    height: min-content;
 }
 
-.featuredProjectsHeader h3 {
+.featuredProjectsHeader h1 {
     font-size: 3rem;
     text-align: center;
     position: relative;
     font-weight: 400;
-    margin: 0;
+    margin: 60px;
+    margin-bottom: 0px;
     text-transform: none;
     color: white;
 }
 
 .project {
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 4% 0%;
-    width: 70vw;
+    margin: 10% 0%;
+    max-width: 70vw;
     position: relative;
     right: 30px;
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .imageContainer {
-    height: 35vw;
-    min-height: 300px;
-    width: 35vw;
-    min-width: 300px;
+    height: 30vw;
+    min-height: 200px;
+    width: 30vw;
     overflow: hidden;
     border: 1px solid white;
     border-radius: 10px;
@@ -91,8 +91,6 @@ a {
     border: 1px solid white;
     border-radius: 4px;
     overflow: hidden;
-    transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth interactions */
-
 }
 
 img {
@@ -167,7 +165,76 @@ h4 {
 }
 
 @media only screen and (max-width: 480px) {
+    .filler {
+        height: 70px;
+    }
+
+    .portfolio {
+        padding: 0;
+    }
+
     h1 {
         text-align: center;
+    }
+
+    .project {
+        min-height: 50vh;
+        width: 90vw;
+        flex-direction: column-reverse;
+        align-items: center;
+        position: relative;
+        left: 0px;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .projectTitle {
+        text-align: center;
+        white-space: nowrap; 
+        display: inline-block;
+        overflow: visible;
+    }
+
+    .projectInfo {
+        width: 95vw;
+        text-align: center;
+    }
+    
+    .imageContainer {
+        height: 80vw;
+        width: 80vw;
+        overflow: hidden;
+        border: 1px solid white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+        border: 2px solid rgb(114, 44, 255);
+    }
+    
+    .image {
+        height: 100%;
+        width: 100%;
+        border-radius: 4px;
+        overflow: hidden;
+        border: none;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .underline {
+        height: 20px;
+        width: 100%;
+        background-color: rgb(114, 44, 255);
+        position: relative;
+        left: 15px;
+        bottom: 15px;
+        z-index: 0;
+        margin-bottom: 8px;
+    }
+
+    .projectLanguages {
+        margin-bottom: 25px;
+        position: relative;
+        right: 5px;
     }
 }
