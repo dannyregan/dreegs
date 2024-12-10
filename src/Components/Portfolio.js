@@ -18,13 +18,15 @@ const Portfolio = () => {
                     <div className={styles.featuredProjectsHeader}>
                         <h1>Featured Projects</h1>
                     </div>
-                    <PortfolioFeature 
-                        img={leagueMe} 
-                        title='League.me' 
-                        description="A full-stack web app for creating, managing, and following pick-up sports leagues. Users can create leagues, manage teams and players, input game scores, and track performance stats with dynamic, real-time data handling. Whether you're organizing a casual game or building a competitive league, this app keeps everyone in the loop and the competition fierce." 
-                        languages={["TypeScript", "JavaScript", "React.js", "Node.js", "MongoDB", "EJS"]}
-                        href="https://github.com/dannyregan/league-manager"
-                        />
+                    <div className={styles.singleProject}>
+                        <PortfolioFeature 
+                            img={leagueMe} 
+                            title='Sports League Manager' 
+                            description="A full-stack web app for creating, managing, and following pick-up sports leagues. Users can create leagues, manage teams and players, input game scores, and track performance stats with dynamic, real-time data handling. Whether you're organizing a casual game or building a competitive league, this app keeps everyone in the loop and the competition fierce." 
+                            languages={["TypeScript", "JavaScript", "React.js", "Node.js", "MongoDB", "EJS"]}
+                            href="https://github.com/dannyregan/league-manager"
+                            />
+                    </div>
                     <PortfolioFeature 
                         img={bankingSimulator} 
                         title='Banking Simulator' 
@@ -36,7 +38,7 @@ const Portfolio = () => {
                         img={todaysToDos} 
                         title="Today's To-Dos"
                         description="A dynamic, reactive to-do list app that helps you stay on top of your game by tracking everything you need to accomplish." 
-                        languages={["JavaScript", "HTML", "CSS"]}
+                        languages={["JavaScript", "React.js", "HTML", "CSS"]}
                         href="https://github.com/dannyregan/todays-todos"
                         />
                 </div>

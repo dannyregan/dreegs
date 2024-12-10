@@ -6,15 +6,15 @@ export default function Nav() {
     return (
         <div className={styles.nav}>
             <div className={styles.navDivLeft}>
-                <Link to='/Home'><p className={styles.initials}>DR</p></Link>
+                <Link to='/home'><p className={styles.initials}>DR</p></Link>
             </div>
             <div className={styles.navDivCenter}>
             </div>
             <div className={styles.navDivRight}>
                 <ul className={styles.navTabs}>
-                    <CustomLink to='/Portfolio'>Portfolio</CustomLink>
-                    <CustomLink to='/AboutMe'>About</CustomLink>
-                    <CustomLink to='/Resume'>Resume</CustomLink>
+                    <CustomLink to='/portfolio'>Portfolio</CustomLink>
+                    <CustomLink to='/aboutme'>About</CustomLink>
+                    <CustomLink to='/resume'>Resume</CustomLink>
                 </ul>
             </div>
         </div>
